@@ -1,11 +1,10 @@
 {
-  // user settings for vscode
-
-  /* prettier */
+  /* prettier 
   "prettier.tabWidth": 2,
   "prettier.useTabs": false,
   "prettier.arrowParens": "avoid",
   "prettier.bracketSameLine": true,
+  */
 
   /* ui */
   "workbench.sideBar.location": "right",
@@ -18,7 +17,7 @@
     "**/__pycache__": true,
     "**/*.class": true
   },
- 
+
   /* |-> smoothing */
   "terminal.integrated.smoothScrolling": true,
   "workbench.list.smoothScrolling": true,
@@ -60,9 +59,10 @@
 
   /* misc/behaviours */
   "terminal.integrated.sendKeybindingsToShell": true,
+  "editor.tabFocusMode": false,
   "window.openFoldersInNewWindow": "off",
   "files.autoSave": "afterDelay",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "biomejs.biome",
   "editor.formatOnSave": true,
   "git.autofetch": true,
   "editor.indentSize": "tabSize",
@@ -72,6 +72,19 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
+  "explorer.confirmDelete": false,
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/tmp/postman-collections-post-response.instructions.md": true,
+    "/tmp/postman-collections-pre-request.instructions.md": true,
+    "/tmp/postman-folder-post-response.instructions.md": true,
+    "/tmp/postman-folder-pre-request.instructions.md": true,
+    "/tmp/postman-http-request-post-response.instructions.md": true,
+    "/tmp/postman-http-request-pre-request.instructions.md": true
+  },
+  "jdk.java.onSave.organizeImports": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "biome.lsp.bin": null,
 
   /* code runner */
   "code-runner.executorMap": {
@@ -132,17 +145,5 @@
     "spwn": "spwn build",
     "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
     "gleam": "gleam run -m $fileNameWithoutExt"
-  },
-  "explorer.confirmDelete": false,
-  "chat.instructionsFilesLocations": {
-    ".github/instructions": true,
-    "/tmp/postman-collections-post-response.instructions.md": true,
-    "/tmp/postman-collections-pre-request.instructions.md": true,
-    "/tmp/postman-folder-post-response.instructions.md": true,
-    "/tmp/postman-folder-pre-request.instructions.md": true,
-    "/tmp/postman-http-request-post-response.instructions.md": true,
-    "/tmp/postman-http-request-pre-request.instructions.md": true
-  },
-  "jdk.java.onSave.organizeImports": false,
-  "liveServer.settings.donotShowInfoMsg": true
+  }
 }
