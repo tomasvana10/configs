@@ -1,21 +1,25 @@
 {
-  /* prettier 
+  /*
   "prettier.tabWidth": 2,
   "prettier.useTabs": false,
   "prettier.arrowParens": "avoid",
   "prettier.bracketSameLine": true,
+  "prettier.singleQuote": false,
   */
 
   /* ui */
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.minimap.size": "fit",
   "editor.minimap.showSlider": "always",
 
   /* file explorer exclusion */
   "files.exclude": {
     "**/__pycache__": true,
-    "**/*.class": true
+    "**/*.class": true,
+    "**/*.tsbuildinfo": true,
+    "**/next-env.d.ts": true,
+    "**/.next": true,
+    "**/node_modules": true
   },
 
   /* |-> smoothing */
@@ -84,7 +88,7 @@
   },
   "jdk.java.onSave.organizeImports": false,
   "liveServer.settings.donotShowInfoMsg": true,
-  "biome.lsp.bin": null,
+  "biome.lsp.bin": "/home/tomas/projects/ralloc/node_modules/@biomejs/biome/bin/biome",
 
   /* code runner */
   "code-runner.executorMap": {
@@ -145,5 +149,8 @@
     "spwn": "spwn build",
     "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
     "gleam": "gleam run -m $fileNameWithoutExt"
-  }
+  },
+  "editor.minimap.size": "fit",
+  "biome.suggestInstallingGlobally": false,
+  "git.openRepositoryInParentFolders": "never"
 }
